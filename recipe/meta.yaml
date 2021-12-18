@@ -1,5 +1,5 @@
 {% set name = "edgetest" %}
-{% set version = "2021.12.4" %}
+{% set version = "2021.12.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 31f92fdef2af79521c014998da891a083a6004b28c7399dab4c7484e5be67da3
+  sha256: df4517541c340720a6dc95d6e89b2a1a67972ad61329ae36eceedb67e897eefa
 
 build:
   noarch: python
   entry_points:
     - edgetest=edgetest.interface:cli
   number: 0
-  script: "{{ PYTHON }} -m pip install -vv --no-deps --ignore-installed ."
+  script: {{ PYTHON }} -m pip install -vv --no-deps --ignore-installed .
 
 requirements:
   host:
@@ -37,7 +37,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: 'edgetest is a tox-inspired python library that tests your package against the latest available dependency versions.'
+  summary: edgetest is a tox-inspired python library that tests your package against the latest available dependency versions.
   description: |
     edgetest is a tox-inspired python library that tests your package against the latest available dependency versions.
     It will create a virtual environment, install your local package into the environment, upgrade specified dependency

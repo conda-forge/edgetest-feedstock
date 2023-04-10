@@ -1,11 +1,11 @@
-About edgetest
-==============
+About edgetest-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/edgetest-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/capitalone/edgetest
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/edgetest-feedstock/blob/main/LICENSE.txt)
 
 Summary: edgetest is a tox-inspired python library that tests your package against the latest available dependency versions.
 

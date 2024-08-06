@@ -1,5 +1,5 @@
 {% set name = "edgetest" %}
-{% set version = "2024.4.0" %}
+{% set version = "2024.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8a3461419b16e92aa48c1977ffe58b20e6c43c6c6194eed42e432640cf4be64e
+  sha256: cda3464d611ad79a83ec4bf935b04252ce5559fc84b6b71fe17b5440c92b08bf
 
 build:
   noarch: python

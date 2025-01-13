@@ -1,5 +1,5 @@
 {% set name = "edgetest" %}
-{% set version = "2024.10.0" %}
+{% set version = "2025.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 909684feca4fb2b77911694cba95dcfa8e3b15af9b0fe6393ac1c14e1d15a19f
+  sha256: 6373d1f0553f25264ccd994a0ecadce51e0831f62d884d6acea7054fb878660e
 
 build:
   noarch: python
   entry_points:
     - edgetest=edgetest.interface:cli
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install -vv --no-deps --ignore-installed .
 
 requirements:

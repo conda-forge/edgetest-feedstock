@@ -1,5 +1,5 @@
 {% set name = "edgetest" %}
-{% set version = "2025.8.0" %}
+{% set version = "2025.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 62fa231b8886d80370e5af4d96f6b818282e67faeb48bc02fac42e29839c0510
+  sha256: 64c67f0b31a7ba0dcfec7db5ba43fea43a46e149561d8ed1afb846f7620a890b
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - pluggy <=1.6.0,>=1.0.0
     - tabulate <=0.9.0,>=0.8.9
     - packaging <=25.0,>20.6
-    - tomlkit <=0.11.4,>=0.11.4
+    - tomlkit <=0.13.3,>=0.11.4
     - uv <=0.8.13,>=0.2.0
     - pyproject-fmt <=2.6.0,>=2.0.0
     - python >={{ python_min }}

@@ -156,4 +156,5 @@ Feedstock Maintainers
 * [@fdosani](https://github.com/fdosani/)
 * [@gladysteh99](https://github.com/gladysteh99/)
 * [@jdawang](https://github.com/jdawang/)
+* [@rhaffar](https://github.com/rhaffar/)
 

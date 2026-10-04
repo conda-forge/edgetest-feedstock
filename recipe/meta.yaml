@@ -30,7 +30,7 @@ requirements:
     - packaging <=26.2,>20.6
     - tomlkit <=0.15.0,>=0.11.4
     - uv <=0.11.16,>=0.6.0
-    - pyproject-fmt <=2.21.2>=2.0.0
+    - pyproject-fmt <=2.21.2,>=2.0.0
     - python >={{ python_min }}
 
 test:

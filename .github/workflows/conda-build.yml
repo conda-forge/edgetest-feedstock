@@ -106,8 +106,6 @@ jobs:
         else
           export IS_PR_BUILD="False"
         fi
-        export MINIFORGE_HOME="${MINIFORGE_HOME/#~/${HOME}}"
-        export CONDA_BLD_PATH="${CONDA_BLD_PATH/#~/${HOME}}"
         ./.scripts/run_osx_build.sh
 
     - name: Build on windows

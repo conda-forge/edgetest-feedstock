@@ -1,13 +1,13 @@
 {% set name = "edgetest" %}
-{% set version = "2026.10.1" %}
+{% set version = "2026.10.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2d87ca7b38e009ab0b503e7df11ec03a31871207fcc26601128fc1f20359c674
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 3a871ce85f86cf87507c6077779eb616a390ea8122604dba46a5581bf048321b
 
 build:
   noarch: python
